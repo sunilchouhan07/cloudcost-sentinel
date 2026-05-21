@@ -3,10 +3,10 @@ resource "random_id" "bucket_id" {
 }
 
 resource "aws_s3_bucket" "bucket" {
-  bucket = "${var.env}-logs-${random_id.bucket_id.hex}"
+  bucket        = "${var.env}-logs-${random_id.bucket_id.hex}"
   force_destroy = true
   tags = {
-    Name = "${var.env}-bucket"
+    Name        = "${var.env}-bucket"
     Project     = var.project
     Environment = var.env
     Owner       = var.owner
@@ -16,7 +16,7 @@ resource "aws_s3_bucket" "bucket" {
 
 
 resource "aws_s3_bucket_versioning" "versioning" {
-  bucket = aws_s3_bucket.bucket.id 
+  bucket = aws_s3_bucket.bucket.id
   versioning_configuration {
     status = "Enabled"
   }
@@ -25,7 +25,7 @@ resource "aws_s3_bucket_versioning" "versioning" {
 
 # resource "aws_s3_bucket_lifecycle_configuration" "lifecycle" {
 #   bucket = aws_s3_bucket.bucket.id 
-  
+
 #   rule {
 #     id = "expire-old-version"
 #     status = "Enabled"
