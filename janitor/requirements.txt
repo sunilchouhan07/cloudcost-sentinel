@@ -1,0 +1,5 @@
+boto3==1.34.131
+botocore==1.34.131
+python-dateutil==2.9.0.post0
+rich==13.7.1
+pytest==8.2.2
