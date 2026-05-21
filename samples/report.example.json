@@ -1,0 +1,47 @@
+{
+  "scan_timestamp": "2026-05-21T06:43:22.457613+00:00",
+  "account_id": "000000000000",
+  "region": "us-east-1",
+  "summary": {
+    "total_orphans": 3,
+    "estimated_monthly_waste_usd": 0.8
+  },
+  "findings": [
+    {
+      "resource_id": "vol-b8f85922",
+      "resource_type": "ebs_volume",
+      "reason": "unattached",
+      "age_days": 0,
+      "estimated_monthly_cost_usd": 0.8,
+      "tags": {
+        "Project": "NimbusKart",
+        "Environment": "dev",
+        "Owner": "sunil",
+        "ManagedBy": "terraform",
+        "Name": "dev-ebs"
+      },
+      "suggested_action": "delete",
+      "safe_to_auto_delete": true
+    },
+    {
+      "resource_id": "vol-aba3c0ba",
+      "resource_type": "ebs_volume",
+      "reason": "missing_tags:Project,Environment,Owner",
+      "age_days": 0,
+      "estimated_monthly_cost_usd": 0,
+      "tags": {},
+      "suggested_action": "tag",
+      "safe_to_auto_delete": false
+    },
+    {
+      "resource_id": "vol-8603c0e0",
+      "resource_type": "ebs_volume",
+      "reason": "missing_tags:Project,Environment,Owner",
+      "age_days": 0,
+      "estimated_monthly_cost_usd": 0,
+      "tags": {},
+      "suggested_action": "tag",
+      "safe_to_auto_delete": false
+    }
+  ]
+}
