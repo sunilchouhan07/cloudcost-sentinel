@@ -13,14 +13,14 @@
 - [x] Part B: GitHub Actions workflow executes successfully end-to-end on a fresh PR
 - [x] Part B: --delete mode respects Protected=true tag
 - [x] Part C: DESIGN.md is present and within 2 pages
-- [ ] Walkthrough video link below is accessible (unlisted is fine)
+- [x] Walkthrough video link below is accessible (unlisted is fine)
 
 ---
 
 ## Walkthrough video
 
 Link (Loom / YouTube unlisted / Google Drive):  
-ADD_VIDEO_LINK_HERE
+https://drive.google.com/file/d/10xjH1xk4cPyjpGVI3gw9WnY5fkXhSF8S/view?usp=sharing
 
 Length: max 5 minutes
 
