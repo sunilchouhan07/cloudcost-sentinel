@@ -1,5 +1,5 @@
 module "network" {
-  source = "./module/network"
+  source = "./modules/network"
 
   vpc_cidr_block = "10.20.0.0/16"
   ssh_cidr       = "0.0.0.0/0"
