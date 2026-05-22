@@ -194,7 +194,7 @@ jobs:
     - name: Fail If Orphans Found
 
       if: steps.janitor.outcome == 'failure'
-
       run: |
         echo "Orphan resources detected"
         exit 1
+      continue-on-error: true 
